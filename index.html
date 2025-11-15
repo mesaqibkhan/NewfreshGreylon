@@ -189,23 +189,12 @@
           {/* NAVBAR */}
           <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled?"bg-white/95 backdrop-blur-md shadow-xl py-2":"bg-white py-4"}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-              <div className="flex items-center gap-3 cursor-pointer group" onClick={()=>nav("home")}>
-                <div className="flex items-center gap-2">
-                  {/* Leaf Icon SVG */}
-                  <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 group-hover:scale-110 transition-transform" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M73 48.5C73 26.185 86.663 6.614 106 -1.5V100C86.663 91.886 73 72.315 73 50V48.5Z" fill="#6BB572"/>
-                    <path d="M106 -1.5C125.337 -9.614 148 4.049 148 26.364V72.136C148 94.451 125.337 108.114 106 100V-1.5Z" fill="#72C17C"/>
-                    <path d="M0 232.987L0 295.487C0 295.487 -11.5 300.987 -18 286.987C-24.5 272.987 -20 249.987 0 232.987Z" fill="#72C17C"/>
-                    <path d="M167 88.04C68.539 36.062 0 63.439 0 164.74V232.987C53 186.987 113.137 184.473 167 244.257V88.04Z" fill="#6BB572"/>
-                    <path d="M174.667 11.152V244.999L167 244.257V88.04C167 62.418 174.667 36.319 174.667 11.152Z" fill="#4F995D"/>
-                  </svg>
-                  <div className="flex flex-col">
-                    <div className="flex items-baseline">
-                      <span className="text-2xl sm:text-3xl font-bold text-gray-900">GREYLON</span>
-                    </div>
-                    <p className="text-xs sm:text-sm text-gray-600 font-medium hidden sm:block">Where Tech Meets Sustainability</p>
-                  </div>
-                </div>
+              <div className="flex items-center cursor-pointer group" onClick={()=>nav("home")}>
+                <img 
+                  src="https://raw.githubusercontent.com/mesaqibkhan/NewfreshGreylon/main/logo.png" 
+                  alt="Greylon Logo" 
+                  className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto group-hover:scale-105 transition-transform"
+                />
               </div>
 
               <nav className="hidden md:flex space-x-1 lg:space-x-4 text-gray-700 font-medium">
@@ -720,7 +709,7 @@
               <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
               <div className="flex items-center">
                 <img 
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSI4MDAiIHZpZXdCb3g9IjAgMCAxNDAwIDgwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE0MDAiIGhlaWdodD0iODAwIiBmaWxsPSJ3aGl0ZSIvPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMV8yKSI+CjxwYXRoIGQ9Ik0yNTEuNSAzNDguNUMyNTEuNSAzMjYuMTg1IDI2NS4xNjMgMzA2LjYxNCAyODQuNSAyOTguNVY0MDBDMjY1LjE2MyAzOTEuODg2IDI1MS41IDM3Mi4zMTUgMjUxLjUgMzUwVjM0OC41WiIgZmlsbD0iIzZCQjU3MiIvPgo8cGF0aCBkPSJNMjg0LjUgMjk4LjVDMzAzLjgzNyAyOTAuMzg2IDMyNi41IDMwNC4wNDkgMzI2LjUgMzI2LjM2NFYzNzIuMTM2QzMyNi41IDM5NC40NTEgMzAzLjgzNyA0MDguMTE0IDI4NC41IDQwMFYyOTguNVoiIGZpbGw9IiM3MkMxN0MiLz4KPHBhdGggZD0iTTE3OC4xMDkgNTMyLjk4N0wxNzguMTA5IDU5NS40ODdDMTc4LjEwOSA1OTUuNDg3IDE2Ni42MDkgNjAwLjk4NyAxNjAuMTA5IDU4Ni45ODdDMTUzLjYwOSA1NzIuOTg3IDE1OC4xMDkgNTQ5Ljk4NyAxNzguMTA5IDUzMi45ODdaIiBmaWxsPSIjNzJDMTdDIi8+CjxwYXRoIGQ9Ik0zNDUuMzMzIDM4OC4wNEMyNDYuODcyIDMzNi4wNjIgMTc4LjEwOSAzNjMuNDM5IDE3OC4xMDkgNDY0Ljc0VjUzMi45ODdDMjMxLjEwOSA0ODYuOTg3IDI5MS4yNDYgNDg0LjQ3MyAzNDUuMzMzIDU0NC4yNTdWMzg4LjA0WiIgZmlsbD0iIzZCQjU3MiIvPgo8cGF0aCBkPSJNMzUzIDMxMS4xNTJWNTQ0Ljk5OUwzNDUuMzMzIDU0NC4yNTdWMzg4LjA0QzM0NS4zMzMgMzYyLjQxOCAzNTMgMzM2LjMxOSAzNTMgMzExLjE1MloiIGZpbGw9IiM0Rjk5NUQiLz4KPHRleHQgeD0iMzgwIiB5PSI0ODAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxODAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxMTUyNDEiPkdSRVlMT048L3RleHQ+Cjx0ZXh0IHg9IjM4MCIgeT0iNTYwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNDgiIGZvbnQtd2VpZ2h0PSI1MDAiIGZpbGw9IiMxMTUyNDEiPldoZXJlIFRlY2ggTWVldHMgU3VzdGFpbmFiaWxpdHk8L3RleHQ+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMV8yIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" 
+                  src="https://raw.githubusercontent.com/mesaqibkhan/NewfreshGreylon/main/logo.png" 
                   alt="Greylon Logo" 
                   className="h-12 sm:h-14 w-auto"
                 />
