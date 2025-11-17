@@ -198,7 +198,7 @@
               </div>
 
               <nav className="hidden md:flex space-x-1 lg:space-x-4 text-gray-700 font-medium">
-                {["home","services","products","epr","blog","about","contact"].map(p=>
+                {["home","services","products","EPR","blog","about","contact"].map(p=>
                   <button key={p} onClick={()=>nav(p)} className={`capitalize hover:text-green-600 transition-all px-3 py-2 rounded-lg text-sm lg:text-base relative ${page===p?"text-green-600 font-semibold":"hover:bg-green-50"}`}>
                     {p.charAt(0).toUpperCase()+p.slice(1)}
                     {page===p && <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-green-600 to-emerald-600"></div>}
@@ -213,7 +213,7 @@
             {menuOpen&&(
               <div className="md:hidden bg-white border-t border-gray-200 shadow-lg fade-in">
                 <div className="px-4 py-3 space-y-1">
-                  {["home","services","products","epr","blog","about","contact"].map(p=>
+                  {["home","services","products","EPR","blog","about","contact"].map(p=>
                     <button key={p} onClick={()=>nav(p)} className={`block w-full text-left capitalize px-3 py-2 rounded-lg text-base font-medium transition-all ${page===p?"text-white bg-gradient-to-r from-green-600 to-emerald-600":"text-gray-700 hover:bg-gray-50"}`}>
                       {p.charAt(0).toUpperCase()+p.slice(1)}
                     </button>)}
@@ -473,7 +473,7 @@
           )}
 
           {/* EPR */}
-          {page==="epr"&&(
+          {page==="EPR"&&(
             <section className="pt-32 pb-20 bg-gradient-to-br from-amber-50 to-green-50 min-h-screen">
               <div className="max-w-4xl mx-auto px-4 sm:px-6">
                 <div className="text-center mb-16 fade-in">
